@@ -1,0 +1,51 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/pseudo.scss' as*;
+@use '../mixins/hover.scss' as*;
+@use '../mixins/responsive.scss'as*;
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    padding-top: 1rem;
+    background-color:var(--white-text);
+    display: none;
+
+    &--show{
+        display: block;
+    }
+    &__item{
+        padding: 0.5rem;
+    }
+    &__link{
+        font-family: var(--primary-font);
+        font-weight: 500;
+    }
+    &::after{
+        @include pseudo(90%,1px);
+        background-color: var(--grey-text);
+        top: 125px;
+        left: 15px;
+    }
+   &-icon{
+    position: absolute;
+    right: 10%;
+   }
+   @include responsive(laptop){
+    @include flexbox(flex,row,nowrap,space-between,center);
+    position: static;
+    width: 100%;
+    margin-left: 350px;
+    background-color: transparent;
+    &-icon{
+        display: none;
+    }
+    &::after{
+        display: none;
+    }
+   }
+}
+

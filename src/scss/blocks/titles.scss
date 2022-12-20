@@ -1,1 +1,15 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/pseudo.scss' as*;
+@use '../mixins/hover.scss' as*;
+@use '../mixins/responsive.scss'as*;
 
+.title{
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-weight:400;
+    color: var(--white-text);
+    &--black{
+        color: var(--black-text);
+    }
+}

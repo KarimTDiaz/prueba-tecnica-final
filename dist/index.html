@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CAMBIAR POR styles.min.css al finalizar el proyecto -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
@@ -13,15 +14,93 @@
 
   <body>
     <header class="header">
-      <nav>
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Item de ejemplo</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__top">
+        <img src="assets/shared/desktop/logo.svg" alt="logo" class="logo">
+        <img src="assets/shared/mobile/menu.svg" alt="icono de menu" class="menu-icon" id="menu-icon" data-icon="hamburger">
+        <nav>
+          <ul class="menu" id="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">STORIES</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">FEATURES</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">PRICING</a>
+            </li>
+            <li class="menu__item button">
+              <a href="#" class="menu__link button--black">GET AN INVITE</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+
+      <article class="article article--black">
+        <picture class="image">
+          <source media="(min-width:1440px )" srcset="assets/home/desktop/create-and-share.jpg">
+          <source media="(min-width:768px )" srcset="assets/home/tablet/create-and-share.jpg">
+          <source media="(min-width:375px )" srcset="assets/home/mobile/create-and-share.jpg">
+          <img src="assets/home/mobile/create-and-share.jpg" alt="imagen-create" >
+        </picture>
+        <div class="article__data">
+        <h1 class="title">Create and share your photo Stories</h1>
+        <p class="text">Photosnap is a platform for photographers and visual storytellers. We make it 
+          easy to share photos, tell stories and connect with others.</p>
+          <div class="link-arrow">
+            <a href="#" class="link-arrow__text">Get an invite</a>
+            <img src="assets/shared/desktop/arrow.svg" alt="flecha" class="link-arrow__icon">
+          </div>
+          </div>
+      </article>
+      <article class="article article--white">
+        <picture class="image image--reverse">
+        <source media="(min-width:1440px )" srcset="assets/home/desktop/beautiful-stories.jpg">
+          <source media="(min-width:768px )" srcset="assets/home/tablet/beautiful-stories.jpg">
+          <source media="(min-width:375px )" srcset="assets/home/mobile/beautiful-stories.jpg">
+          <img src="assets/home/mobile/beautiful-stories.jpg" alt="imagen-beautiful">
+        </picture>
+          <div class="article__data article__data--reverse">
+            <h2 class="title title--black">Beautiful stories every time</h2>
+            <p class="text">We provide design templates to ensure your stories look terrific. Easily add 
+              photos, text, embed maps and media from other networks. Then share your story 
+              with everyone.</p>
+              <div class="link-arrow link-arrow--black">
+                <a href="#" class="link-arrow__text">View the stories</a>
+                <img src="assets/shared/desktop/arrow.svg" alt="flecha" class="link-arrow__icon link-arrow__icon--black">
+              </div>
+              </div>
+        
+      </article>
+      <article class="article article--white">
+        <picture class="image">
+        <source media="(min-width:1440px )" srcset="assets/home/desktop/designed-for-everyone.jpg">
+          <source media="(min-width:768px )" srcset="assets/home/tablet/designed-for-everyone.jpg">
+          <source media="(min-width:375px )" srcset="assets/home/mobile/designed-for-everyone.jpg">
+          <img src="assets/home/mobile/designed-for-everyone.jpg" alt="imagen-beautiful">
+        </picture>
+          <div class="article__data">
+            <h2 class="title title--black">Designed for everyone</h2>
+            <p class="text">Photosnap can help you create stories that resonate with your audience.  Our 
+              tool is designed for photographers of all levels, brands, businesses you name it. </p>
+              <div class="link-arrow link-arrow--black">
+                <a href="#" class="link-arrow__text">View the stories</a>
+                <img src="assets/shared/desktop/arrow.svg" alt="flecha" class="link-arrow__icon link-arrow__icon--black">
+              </div>
+              </div>
+      </article>
+      <article class="article article--with-bg">
+        <h2 class="title title--small">The Mountains</h2>
+        <p class="text text--small">by John Appleseed</p>
+        <div class="link-arrow link-arrow--black">
+          <a href="#" class="link-arrow__text">View the stories</a>
+          <img src="assets/shared/desktop/arrow.svg" alt="flecha" class="link-arrow__icon link-arrow__icon--black">
+        </div>
+      </article>
+    </main>
+    
     <footer class="footer"></footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

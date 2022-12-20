@@ -1,5 +1,13 @@
 :root {
-  /* Variables CSS */
+  --primary-font: 'DM Sans', sans-serif;
+  --white-text:hsl(0, 0%, 100%);
+  --grey-text:hsl(0, 0%, 59%);
+  --black-text:hsl(0, 0%, 0%);
+
 }
+$primary-font: 'DM Sans', sans-serif;
+$white-text:hsl(0, 0%, 100%);
+$grey-text:hsl(0, 0%, 100%);
+$black-text:hsl(0, 0%, 0%);
 
 /* Variables SASS */

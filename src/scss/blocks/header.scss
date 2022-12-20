@@ -1,1 +1,20 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/pseudo.scss' as*;
+@use '../mixins/hover.scss' as*;
+@use '../mixins/responsive.scss'as*;
+
+.header{
+    &__top{
+        @include flexbox(flex,row,nowrap,space-between,center);
+        position: relative;
+        height: 50px;
+        padding: 1rem;
+    }
+    @include responsive(laptop){
+        position: static;
+        @include flexbox(flex,row,nowrap,space-evenly,center);
+        height: 100px;
+        width: 100%;
+    }
+}
 

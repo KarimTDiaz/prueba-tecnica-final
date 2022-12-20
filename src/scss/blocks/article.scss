@@ -1,0 +1,27 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/pseudo.scss' as*;
+@use '../mixins/hover.scss' as*;
+@use '../mixins/responsive.scss'as*;
+
+.article{
+    &__data{
+        padding: 5rem 2.5rem;
+    }
+    &--black{
+        background-color:var(--black-text); 
+    }
+    
+    @include responsive(laptop){
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr;
+
+        &__data{
+            grid-column: 1/2;
+            &--reverse{
+                grid-column: 3/5;
+            }
+        }
+    }
+   
+    
+}
